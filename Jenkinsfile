@@ -10,10 +10,10 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/itdep202427-cmd/DEVOPS-4.git'
+                git branch: 'main', url: 'https://github.com/Jasmin5023129/devops.git'
                  
             }
-        }
+
 
         stage('Build with Maven') {
             steps {
@@ -30,8 +30,8 @@ pipeline {
                         url: 'http://localhost:8081'
                     )
                 ],
-                contextPath: 'hello-world2',
-                war: 'target/hello-world2.war'
+                contextPath: 'hello-world3',
+                war: 'target/hello-world3.war'
             }
         }
     }
